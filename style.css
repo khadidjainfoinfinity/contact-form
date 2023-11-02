@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+*{
+  padding:  0;
+  margin:  0;
+  box-sizing:  border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform:  capitalize;
+  letter-spacing:  1px;
+}
+
+body{
+  display:  flex;
+  justify-content:  center;
+  align-items:  center;
+  width:  100%;
+  min-height:  100vh;
+  background: #E9E9E9;
+}
+
+.contact {
+  position:  relative;
+  width:  500px;
+  height:  380px;
+  background-image:  url('Bg.png') ;
+  background-size:  cover;
+  background-position: center center; 
+  box-shadow:  0 0 15px 6px rgba(0,0,0,.1);
+  border-radius:  20px;
+  display:  flex;
+  flex-flow:  row nowrap;
+  justify-content:  flex-end;
+  align-items:  center;
+}
+
+
+.contact .content{
+  display:  flex;
+  flex-flow:  column nowrap;
+  align-items:  center;
+  width:  60%;
+  height:  100%;
+  background:  transparent ;
+  position:  relative;
+}
+
+
+.contact .content h2{
+  font-size:  2rem;
+  margin:  10% 0;
+}
+
+
+.contact .content .info{
+height:  60%;
+width:  100%;
+display:  flex;
+flex-flow:  column nowrap;
+justify-content:  space-between;
+align-items:  center; 
+}
+
+.contact .content .info input{
+  width:  80%;
+  height:  15%;
+  padding-left:  10px;
+  color:  #111;
+  outline:  none;
+  border:  none;
+  border-radius: 5px;
+  background:  rgba(255, 111,111, .1);
+  font-size:  .8rem;
+}
+
+.contact .content .info input::placeholder{
+  color:  #000;
+}
+
+.contact .content .info textarea::placeholder{
+  color:  #000;
+}
+
+.info input:hover::placeholder{
+  visibility:  hidden;
+}
+
+.info textarea:hover::placeholder{
+  visibility:  hidden;
+  
+  }
+
+.contact .content .info textarea{
+  width:  80%;
+  height:  50%;
+  padding:  15px ;
+  color:  #111;
+  outline:  none;
+  border: none;
+  border-radius: 5px;
+  background:  rgba(255, 111,111, .1);
+  overflow: auto;
+  font-size: .8rem;
+  resize:  none;
+}
+
+
+.contact .content .send{
+  margin: 5% 0; 
+  width:  40%;
+  height:  10%;
+  font-size:  1.2rem;
+  color:  #fff;
+  border: none;
+  background:  #E9E9E9;
+  box-shadow:  0 3px 5px 2px rgba(0,0,0,.1);
+  border-radius:  30px;
+  display:  flex;
+  justify-content:  center;
+  align-items:  center;
+  transition:  .3s ease-out;
+  font-weight:  700;
+  background: rgb(250,150,106);
+  background-size:  200% 100%;
+background: -moz-linear-gradient(80deg, rgba(250,150,106,1) 0%, rgba(252,64,57,1) 50%);
+background: -webkit-linear-gradient(80deg, rgba(250,150,106,1) 0%, rgba(252,64,57,1) 50%);
+background: linear-gradient(80deg, rgba(250,150,106,1) 0%, rgba(252,64,57,1) 50%);
+}
+
+@media screen and (max-width: 500px) {
+  
+  
+  .contact{
+    width: 380px;
+    height:  280px;
+    border-radius:10px;
+  }
+  
+  .contact .content h2{
+  font-size:  1.4rem;
+}
+
+.contact .content .info input{
+  font-size: .6rem;
+}
+
+.contact .content .info textarea{
+  font-size: .6rem;
+}
+
+#send-button{
+  font-size:  .9rem;
+}
+
+
+
+}
